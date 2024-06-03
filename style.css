@@ -1,0 +1,504 @@
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Code+Latin:wght@300;400&family=Roboto&display=swap');
+
+body {
+font-family: 'Roboto', sans-serif;
+padding: 0;
+margin: 0;
+background-color: #242424;
+}
+
+
+
+header {
+display: flex;
+align-items: center;
+justify-content: center;
+height: 400px;
+width: 100%;
+height: 20%;
+flex-direction: column;
+margin-top: 30vh;
+}
+
+header img{
+  width: 34%;
+}
+
+h1 {
+font-size: 2.5vw;
+font-family: 'M PLUS Code Latin', monospace;
+padding-top: 10px;
+color: white;
+text-transform: uppercase;
+font-weight: 300;
+}
+
+h1 span{
+  text-decoration:underline;
+}
+
+@media only screen and (max-width: 1260px) {
+  
+header img{
+width: 50%;
+}
+
+h1 {
+  font-size: 3.7vw;
+}
+}
+
+@media only screen and (max-width: 700px) {
+  
+header img{
+width: 80%;
+}
+
+h1 {
+  font-size: 5.7vw;
+}
+}
+
+h2{
+  padding: 0px 10px;
+  margin-top: 0px;
+  color: white;
+  text-transform: uppercase;
+  font-weight: 300;
+  font-size: 2em;
+}
+
+article{
+  padding: 20px 10px;
+  color: white;
+  font-weight: 200;
+  text-align: justify;
+  font-size: 1.5em;
+  margin: 0;
+}
+
+article span{
+  color: #FF3131;
+}
+
+img {
+margin: 0;
+}
+
+ul {
+  list-style-type: none;
+  overflow: hidden;
+  }
+
+li {
+  list-style: none;
+  display: block;
+  text-decoration: none;
+  list-style: none;
+}
+
+hr{
+  margin-top: 10vh;
+}
+
+.section1{
+  background-image: url(.//img/bg.png);
+  background-size: 34vw;
+  background-repeat: no-repeat;
+  background-position: center 0;
+  display: flex;
+  flex-direction: column;
+  margin-top: 20vh;
+}
+
+
+/*articles positionnés à gauche*/
+.info1{
+width: 20%;
+margin-left: 10%;
+text-align: right;
+}
+
+
+.slide-right {
+  animation: 3s slide-right;
+}
+
+@keyframes slide-right {
+  from {
+    margin-left: -100%;
+  }
+  to {
+    margin-left: 0%;
+  }
+}
+
+/*articles positionnés à droite*/
+
+.slide-left {
+  animation: 3s slide-left;
+}
+.info2{
+width: 20%;
+float: right;
+text-align: left;
+margin-right: 10%;
+}
+
+
+
+@keyframes slide-left {
+
+  from {
+    margin-right: -100%;
+  }
+  to {
+    margin-right: 0;
+  }
+}
+
+.containerscroll{
+width: 100%;
+/*margin-top: 30%;*/
+}
+
+
+.containerscroll1{
+width: 100%;
+
+}
+
+.element1{
+  margin-top: 5%;
+}
+
+@media screen and (max-width : 1260px){
+  .section1{
+    background-size: 30%;
+    background-image: url(.//img/bg_small.png);
+  }
+  .info1{
+    width: 30%;
+    margin-left: 4%;
+  }
+  h2{
+    margin-top: 0%;
+  }
+  .info2{
+    width: 30%;
+    margin-right: 4%;
+  }
+}
+
+@media screen and (max-width : 910px){
+  .section1{
+    background-image: url(.//img/bg.png);
+    background-size: 100%;
+    padding-bottom: 5%;
+  }
+  .info1{
+    width: 80%;
+    margin-left: 10%;
+    background-color: #f1f1f1c4;
+    margin-top: 10%;
+  }
+  .info1 article{
+    color: #4d4b4b;
+    font-size: 1em;
+  }
+  h2{
+    margin-top: 0%;
+    color: #4d4b4b;
+    font-size: 1.5em;
+    text-align: center;
+  }
+  .info2{
+    width: 80%;
+    margin-right: 10%;
+    background-color: #f1f1f1c4;
+    margin-top: 10%;
+  }
+  .info2 article{
+    color: #4d4b4b;
+    font-size: 1em;
+  }
+}
+
+
+/*-----------------------------Section 2 : LE CORBUSIER -----------------------------------*/
+
+.section2{
+display: flex;
+align-items: center;
+justify-content: center;
+width: 100%;
+flex-direction: column;
+margin-top: 10vh;
+}
+
+.soupe{
+  width: 34%;
+}
+
+.section2 .soupe h2 {
+  display: flex;
+  flex-direction: column;
+  text-align:justify;
+  font-size: 2.5vw;
+  font-family: 'M PLUS Code Latin', monospace;
+  color: white;
+  text-transform: uppercase;
+  font-weight: 300;
+  margin-bottom: 0px;
+  }
+
+.section2 h2 span{
+    color: #FF3131;
+    text-align: center;
+}
+  
+  @media only screen and (max-width: 1260px) {
+.soupe{
+  width: 50%;
+}
+.section2 .soupe h2 {
+  text-align: center;
+    font-size: 3.7vw;
+  }
+.soupe article{
+  font-size: 1em;
+}
+  }
+  
+  @media only screen and (max-width: 700px) {
+.soupe{
+  width: 80%;
+}
+.section2 .soupe h2 {
+    font-size: 5.7vw;
+  }
+
+  }
+
+.corbu{
+  display: none;
+  width: fit-content;
+  flex-direction: column;
+  align-items: center;
+}  
+.section2 span:hover>.corbu{
+  display: flex;
+}
+.corbu img{
+  width: 50%;
+}
+.corbu p{
+  padding: 20px 10px;
+  color: white;
+  font-weight: 200;
+  text-align: justify;
+  font-size: 0.5em;
+  text-transform:capitalize;
+  padding: 0%;
+  margin: 0%;
+}
+
+
+.section2 h3 {
+  width: 34%;
+  font-size: 2.5vw;
+  font-family: 'M PLUS Code Latin', monospace;
+  color: white;
+  text-transform: uppercase;
+  text-align: justify;
+  font-weight: 300;
+  margin-bottom: 0px;
+  }
+
+  
+  @media only screen and (max-width: 1260px) {
+.section2 h3 {
+  width: 50%;
+font-size: 3.7vw;
+  }
+  }
+  
+  @media only screen and (max-width: 700px) {
+.section2 h3 {
+  width: 80%;
+    font-size: 5.7vw;
+  }
+  }
+
+/*-----------------------------Swiper-----------------------------------*/
+
+.swiper {
+  width: 70%;
+  padding-top: 3.125rem;
+  height: 28.125rem;
+  z-index: 2;
+  margin: 5% 5%;
+}
+
+.swiper-pagination-bullet,
+.swiper-pagination-bullet-active {
+  background: #F1F1F1;
+}
+
+.swiper-pagination {
+  bottom: 1.25rem !important;
+  --swiper-theme-color: #f44336;
+}
+
+.swiper-slide {
+  width: 18.75rem;
+  height: 28.125rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size:cover;
+}
+
+.swiper-slide-prev, 
+.swiper-slide-next{
+  filter: blur(2px);
+}
+
+.swiper-slide h4 {
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 1.4;
+  margin-top: 1.625rem;
+  padding: 0 0 0 1.563rem;
+  text-align: center;
+  transform: translateY(-32px);
+}
+
+.swiper-slide div {
+  display: none;
+  opacity: 0;
+  padding-bottom: 0.625rem;
+}
+
+.swiper-slide-active div {
+  display: block;
+  opacity: 1;
+}
+
+.swiper-3d .swiper-slide-shadow-left,
+.swiper-3d .swiper-slide-shadow-right {
+  background-image: none;
+}
+
+@media screen and (min-width: 48rem) {
+  .a_propos {
+    display: flex;
+    align-items: center;
+  }
+}
+
+@media screen and (min-width: 93.75rem) {
+  .swiper {
+    width: 85%;
+  }
+}
+
+
+
+
+
+
+/*-------------footer-------------*/
+footer {
+display: flex;
+justify-content: center;
+align-items: center;
+bottom: 0;
+width: 100%;
+height: 350px;
+background-color: transparent;
+border: solid white 1px;
+}
+
+footer img {
+padding: 10px;
+width: 200px;
+}
+
+
+@media only screen and (max-width: 600px) {
+  
+footer img{
+width: 100px;
+}
+
+}
+
+
+
+.element2 {
+display: flex;
+justify-content: center;
+align-items: center;
+border: solid white 1px;
+padding: 10px;
+width: 300px;
+height: 328px;
+background-color: transparent;
+}
+
+
+.copyright {
+display: flex;
+justify-content: center;
+align-items: center;
+border: solid white 1px;
+padding: 10px;
+width: 300px;
+height: 328px;
+background-color: transparent;
+color: white;
+}
+
+
+#scrollToTopBtn{
+font-size: 35px;
+padding: 18px 18px;
+background-color: transparent;
+}
+
+button:hover {
+color: #FF3131;
+}
+
+.scrolltop {
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+
+/*
+#                             ___-------___
+#                         _-~~             ~~-_
+#                      _-~                    /~-_
+#   /^\__/^\         /~  \                   /    \
+# /|  O|| O|        /      \_______________/        \
+#| |___||__|      /       /                \          \
+#|          \    /      /                    \          \
+#|   (_______) /______/                        \_________ \
+#|         / /         \                      /            \
+# \         \^\\         \                  /               \     /
+#   \         ||           \______________/      _-_       //\__//
+#     \       ||------_-~~-_ ------------- \ --/~   ~\    || __/
+#       ~-----||====/~     |==================|       |/~~~~~
+#        (_(__/  ./     /                    \_\      \.
+#               (_(___/                         \_____)_)
+
+(je l'ai volé sur le robots.txt de nature et découverte)
+*/
